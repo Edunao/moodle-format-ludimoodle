@@ -1,0 +1,198 @@
+/* GENERAL */
+.progression-title,
+.currentrun-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0 30px 0;
+}
+
+
+
+/* PROGRESS BAR */
+.badge-bar {
+    position: relative;
+    width: 80%;
+    left: 10%;
+    height: 30px;
+    font-size: 10px;
+    margin: 10px 0;
+    border: 1px solid #e5d2c6;
+    border-radius: 15px;
+    background-color: rgba(229, 210, 198, 0.5);
+}
+.badge-bar .badge-internalbar {
+    display: block;
+    height: 28px;
+    position: absolute;
+    z-index: 1;
+    background: linear-gradient(180deg, #f8b334 10%, #fff, #f8b334 25%);
+    text-align: center;
+    animation: progressBar 2s ease-in-out;
+    animation-fill-mode: both;
+    border-radius: 14px 0 0 14px;
+}
+.badge-bar .badge-internalbar.radius {
+    border-radius: 14px;
+}
+.badge-bar .badge-part {
+    position: relative;
+    display: inline-block;
+    height: 28px;
+}
+.badge-bar .badge-part .threshold {
+    position: absolute;
+    right: 6px;
+    bottom: -21px;
+    z-index: 3;
+    color: #c9beb6;
+}
+.badge-bar .badge-part .threshold.reached {
+    color: #000;
+}
+.badge-bar.progression-bar .badge-part .threshold {
+    right: 0;
+}
+.badge-bar .badge-part .threshold-limit {
+    position: absolute;
+    border-right: 2px solid #9e9893;
+    right: 8px;
+    bottom: -5px;
+    z-index: 4;
+    height: 15px;
+}
+.badge-bar .badge-part .threshold-limit.reached {
+    border-color: #000;
+}
+
+@keyframes progressBar {
+    0% { width: 0; }
+    100% {}
+}
+
+
+
+
+/* COURSE VIEW */
+.ludi-badges.ludi-summary-section-view {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 160px;
+}
+.ludi-badges.ludi-summary-section-view .two-part {
+    width: 50%;
+    height: 90%;
+    margin: auto;
+}
+.ludi-badges.ludi-summary-section-view .two-part .title {
+    margin-bottom: 10px;
+    color: #C9BEB6;
+    font-size: initial;
+    font-weight: unset;
+}
+.ludi-badges.ludi-summary-section-view .two-part.left-part {
+    border-right: #f8b334 5px dotted;
+    text-align: right;
+}
+.ludi-badges.ludi-summary-section-view .two-part.right-part {
+    text-align: left;
+}
+.ludi-badges.ludi-summary-section-view .two-part.left-part .title {
+    padding-right: 13px;
+}
+.ludi-badges.ludi-summary-section-view .two-part.right-part .title {
+    padding-left: 13px;
+}
+
+.ludi-badges.ludi-summary-section-view img {
+    height: 100px;
+    width: auto;
+    max-width: 100%;
+}
+
+
+
+/* SECTION VIEW */
+.ludi-badges.ludi-section-view {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.ludi-badges.ludi-section-view .two-part {
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+    padding: 10px 0;
+}
+.ludi-badges.ludi-section-view .left-part {
+    border-right: 3px dotted #e5d2c6;
+}
+.ludi-badges.ludi-section-view .right-part {
+    width: calc(50% - 3px);
+}
+.ludi-badges.ludi-section-view img {
+    width: 100%;
+    padding: 10%;
+}
+.ludi-badges .ludi-badge.ludi-summary-mod-view img,
+.ludi-badges .ludi-badge.ludi-summary-mod-view svg {
+    max-width: 80px;
+}
+
+.ludi-details-view   .ludi-grid-view.ludi-badges {
+    min-height: 348px;
+}
+
+
+/* MOD VIEW */
+.ludi-mod-view .ludi-badges img {
+    height: 115px;
+    width: auto;
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+.ludi-mod-view .ludi-badges .ludi-right-part .progression-bar {
+    width: 50%;
+    left: 25%;
+}
+.ludi-mod-view .ludi-badges .progression-title,
+.ludi-mod-view .ludi-badges .currentrun-title {
+    margin: 10px 0 10px 0;
+}
+
+.ludi-badges.ludi-mod-view {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    min-height: 348px;
+}
+.ludi-badges.ludi-mod-view .ludi-three-part {
+    display: inline-block;
+    width: 33.33%;
+    height: min-content;
+    margin: auto;
+}
+.ludi-badges.ludi-mod-view .ludi-three-part .ludi-three-part-title {
+    height: 44px;
+    color: #C9BEB6;
+}
+.ludi-badges.ludi-mod-view .ludi-three-part:nth-child(2) {
+    border-left: #f8b334 5px dotted;
+    border-right: #f8b334 5px dotted;
+}
+
+@media (max-width: 650px) {
+    .badge-bar.progression-bar .badge-part.part-0 .threshold {
+        right: 5px;
+    }
+    .badge-bar.progression-bar .badge-part.part-2 .threshold {
+        right: -10px;
+    }
+}

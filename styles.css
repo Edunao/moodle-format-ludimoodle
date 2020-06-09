@@ -1,0 +1,817 @@
+/*-----------------------------------------
+  Default format styles
+*/
+#page-course-format-ludimoodle-reports-quiz_report #page-header {
+    min-height: unset !important;
+}
+#page-course-format-ludimoodle-reports-quiz_report #page-header .card {
+    display: none;
+}
+/* For experimentation */
+#page-local-ludimoodle_suggestions-index #page-header .card {
+    display: none;
+}
+#page-mod-feedback-view #page-content div[role="main"] h2 a:first-child {
+    display: none;
+}
+
+/* min-height for page content */
+body.format-ludimoodle:not(.editing) #page-content,
+body.format-ludimoodle:not(.editing) #page-content #region-main > .card,
+body.format-ludimoodle:not(.editing) #page-header,
+body.format-ludimoodle:not(.editing) #page-header .card {
+    min-height: 480px;
+}
+/* */
+body.format-ludimoodle:not(.editing) #page-header .card > .card-body > .d-flex {
+    display: initial !important;
+}
+/* Hide footer on a ludimoodle page */
+body.format-ludimoodle:not(.editing) #page-footer,
+body.format-ludimoodle:not(.editing) #page-wrapper::after {
+    display: none;
+}
+
+/* Hide original navbar and coursetitle */
+body.format-ludimoodle:not(.editing) #page-navbar,
+body.format-ludimoodle:not(.editing) #page-header .card-body .mr-auto .page-context-header,
+body.format-ludimoodle:not(.editing) #region-main #changenumsections,
+body.format-ludimoodle:not(.editing) #region-main h2.accesshide {
+    display: none;
+}
+
+/* Hide ludimoodle block in editing mode */
+body.format-ludimoodle.editing .ludimoodle-container {
+    display: none;
+}
+
+
+body.format-ludimoodle:not(.editing) #region-main.has-blocks {
+    display: block;
+    width: 100%;
+}
+/* Hide Moodle basic navigation */
+body.format-ludimoodle:not(.editing) #prev-activity-link,
+body.format-ludimoodle:not(.editing) #next-activity-link,
+body.format-ludimoodle:not(.editing) #page-content #region-main .card .card-body .row .col-md-4 .urlselect form {
+    display: none;
+}
+/* Hide frame for edit option */
+body.format-ludimoodle #region-main .region_main_settings_menu_proxy {
+    display: none;
+}
+body.format-ludimoodle:not(.editing) #page-content .card {
+    border: none;
+}
+body.format-ludimoodle:not(.editing) #page-header .card {
+    border: none;
+}
+body.format-ludimoodle #page-content .card .card-body {
+    padding: 30px;
+}
+body.format-ludimoodle #page-header .card .card-body {
+    padding: 20px 10px;
+}
+body.format-ludimoodle #page-header > .col-12.pt-3.pb-3 {
+    padding: 20px;
+}
+#region-main-box {
+    padding: 0 20px;
+}
+.course-content ul.sections {
+    margin: 0;
+    list-style: none;
+}
+
+.course-content ul.sections li.section-summary {
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.course-content ul.sections li.section-summary .section-title {
+    margin: 10px;
+}
+
+.course-content ul.sections li.section .content {
+    margin: 0 40px;
+}
+
+.course-content ul.sections li.section .left,
+.course-content ul.sections li.section .right {
+    width: 40px;
+    padding: 0 6px;
+}
+
+.course-content ul.sections li.section .left {
+    padding-top: 22px;
+    text-align: right;
+}
+
+.jsenabled .course-content ul.sections li.section .left,
+.jsenabled .course-content ul.sections li.section .right {
+    width: auto;
+}
+
+.course-content ul.sections li.section .left .section-handle img.icon {
+    padding: 0;
+    vertical-align: baseline;
+}
+
+.course-content ul.sections li.section .section_action_menu .textmenu,
+.course-content ul.sections li.section .section_action_menu .menu-action-text {
+    white-space: nowrap;
+}
+
+.format-ludimoodle #course-header {
+    width: 100%;
+}
+
+/* Motivator explanation popup */
+#motivator-explanation {
+    display: none;
+    width: 600px;
+    height: 250px;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    overflow: hidden;
+    left: calc(50% - 300px);
+    top: 125px;
+    z-index: 5000;
+}
+
+#motivator-explanation-close {
+    cursor: pointer;
+    float: right;
+}
+
+#motivator-explanation-close img {
+    width: 40px;
+    height: 40px;
+    margin: 10px 10px 0 0;
+}
+
+#motivator-explanation-content h3 {
+    text-align: left;
+    display: inline-block;
+    border-bottom: 3px solid #F8B334;
+    font-weight: 600;
+    padding: 23px 100px 13px 0;
+    margin: 0 0 25px 20px;
+    font-size: 18px;
+}
+
+#motivator-explanation-content p {
+    text-align: justify;
+    padding: 0 20px;
+    color: #A7998E;
+}
+
+/*-----------------------------------------
+  Custom navigation
+*/
+
+.text-center {
+    text-align: center;
+}
+.margin-top-30 {
+    margin-top: 30px;
+}
+.margin-bottom-30 {
+    margin-bottom: 30px;
+}
+.ludimoodle-container .ludi-nav-bar {
+    height: 120px;
+    background: linear-gradient(0deg, transparent calc(50% - 1.5px), #F8b334 calc(50%), transparent calc(50% + 1.5px));
+
+}
+.ludimoodle-container .ludi-nav-bar .ludi-nav-title {
+    font-weight: 700;
+    text-align: center;
+    height: 40px;
+    line-height: 20px;
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.ludimoodle-container .ludi-nav-bar .ludi-navigation {
+    height: 60px;
+    background:-o-linear-gradient(0deg, rgba(0,0,0,0) 28px, #f8b334, rgba(0,0,0,0) 32px);
+    background:-moz-linear-gradient(0deg, rgba(0,0,0,0) 28px, #f8b334, rgba(0,0,0,0) 32px);
+    background:linear-gradient(0deg, rgba(0,0,0,0) 28px, #f8b334, rgba(0,0,0,0) 32px);
+}
+
+.ludimoodle-container .ludi-nav-bar .ludi-navigation .nav-buttons {
+    display: inline-block;
+    background-color: #f8b334;
+    padding: 6px 12px;
+    border-radius: 15px;
+    width: 124px;
+    height: 40px;
+    line-height: 28px; /* 28 = 40 - (6 x 2) for padding top / bottom */
+    margin: 10px 15px 10px 0;
+}
+.ludimoodle-container .ludi-nav-bar .ludi-navigation .nav-buttons .ludi-nav-option-title {
+    width: calc(100% - 30px);
+    display: inline-block;
+    text-align: center;
+    color: #FFF;
+    font-size: 18px;
+}
+.ludimoodle-container .ludi-nav-bar .ludi-navigation .nav-buttons img {
+    width: 30px;
+    height: 30px;
+}
+
+.ludimoodle-container .ludi-nav-bar .ludi-navigation .nav-buttons.active {
+    background-color: #DD3C50;
+}
+
+.ludimoodle-container .ludi-nav-bar .ludi-navigation .nav-buttons:last-child {
+    margin: 0;
+    padding: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    float: right;
+    line-height: 60px;
+    text-align: center;
+}
+.ludimoodle-container .ludi-nav-bar .ludi-navigation .nav-buttons:last-child  img {
+    width: 40px;
+    height: 40px;
+}
+
+
+#page-course-format-ludimoodle-pages-manage_course .section-container {
+    margin-bottom: 15px;
+    padding: 10px 10px 30px 10px;
+    border-bottom: 3px solid rgba(0, 0, 0, .125);
+}
+
+#page-course-format-ludimoodle-pages-manage_course .section-container .section-name {
+    text-align: center;
+}
+
+#page-course-format-ludimoodle-pages-manage_course .cm-container {
+    margin-top: 20px;
+    margin-left: 3%;
+}
+
+#page-course-format-ludimoodle-pages-manage_course .choices-container {
+    display: flex;
+    align-items: stretch;
+}
+
+#page-course-format-ludimoodle-pages-manage_course .cm-preset-choice,
+#page-course-format-ludimoodle-pages-manage_course .section-preset-choice {
+    display: inline-block;
+    width: 60%;
+}
+
+#page-course-format-ludimoodle-pages-manage_course .cm-motivator-choices,
+#page-course-format-ludimoodle-pages-manage_course .section-motivator-choices {
+    display: inline-block;
+    width: 40%;
+    border: 1px solid rgba(0, 0, 0, .125);
+    padding: 10px;
+}
+
+#page-course-format-ludimoodle-pages-manage_course .motivator-presets-container {
+    border: 1px solid rgba(0, 0, 0, .125);
+    padding: 10px;
+}
+
+#page-course-format-ludimoodle-pages-manage_course .motivator-presets-container > p:first-child {
+    text-align: center;
+}
+
+#page-course-format-ludimoodle-pages-manage_course img.motivator-icon {
+    width: 70px;
+}
+
+.ludi-course-view.ludi-grid-view .grid-element {
+    display: inline-block;
+    width: calc(50% - 20px);
+    margin-top: 20px;
+    margin-right: 20px;
+    min-width: 320px;
+    height: 200px;
+}
+
+
+.ludi-course-view.ludi-grid-view .grid-element a .element-content {
+    height: 160px;
+    width: 100%;
+}
+
+.ludi-course-view.ludi-grid-view .grid-element a .element-title {
+    height: 40px;
+    width: 100%;
+}
+
+.ludimoodle-container .svg {
+    width: 180px;
+    height: 180px;
+    margin: auto;
+    padding-left: 4px;
+    padding-right: 4px;
+    visibility: hidden;
+}
+
+.ludi-main-container {
+    min-height: 348px;
+}
+
+
+.ludi-main-container:not(.show) {
+    display: none;
+}
+
+.ludi-main-container.section-without-motivator {
+    visibility: hidden;
+}
+
+.ludi-mod-view {
+    text-align: center;
+}
+
+.ludi-details-view {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.ludi-details-view .summary-element {
+    vertical-align: top;
+    border-right: #f8b334 5px dotted;
+    width: 50%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: start;
+    justify-content: center;
+    position: relative;
+    padding-right: 20px;
+}
+
+.ludi-details-view .summary-element .ludi-section-view {
+    margin: auto;
+    width: 100%;
+}
+
+.ludi-details-view .ludi-grid-view {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    padding-left: 1.25rem;
+}
+
+.ludi-details-view .ludi-grid-view img,
+.ludi-details-view .ludi-grid-view svg {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+}
+
+.ludi-grid-view {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+}
+.ludi-course-container .ludi-course-view.ludi-grid-view {
+    justify-content: center;
+}
+
+.ludi-section-container .ludi-details-view .ludi-grid-view .grid-element {
+    display: inline-block;
+    width: 33.333333333%;
+    height: auto;
+    padding: 10px;
+}
+
+.ludi-grid-view .grid-element a {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+.ludi-grid-view .grid-element a:hover {
+    text-decoration: none;
+}
+
+.ludi-grid-view .grid-element a .element-content {
+    text-align: center;
+    max-width: 100%;
+    max-height: 100%;
+}
+.ludi-course-container .ludi-grid-view .grid-element a .element-content img,
+.ludi-course-container .ludi-grid-view .grid-element a .element-content svg {
+    width: 100%;
+    max-width: 160px;
+    margin: auto;
+}
+.ludi-grid-view .grid-element a .element-title {
+    text-align: center;
+    display: inline-block;
+}
+
+.ludi-grid-view .grid-element.never-acceded {
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+}
+
+.ludi-grid-view .grid-element.done {
+    filter: grayscale(0.6);
+    -webkit-filter: grayscale(0.6);
+    opacity: 0.8;
+}
+
+.ludi-grid-view .grid-element.hidden a img,
+.ludi-grid-view .grid-element.hidden a svg {
+    cursor: not-allowed;
+}
+
+.ludi-grid-view .grid-element.hidden .element-title,
+.ludi-grid-view .grid-element.done .element-title {
+    color: #ababab;
+}
+
+.ludi-grid-view .grid-element.hidden a:hover {
+    text-decoration: none;
+}
+
+.grid-element .element-title {
+    color: #373a3c;
+}
+
+.mod-motivator.mod-hidden {
+    pointer-events: none;
+}
+
+.mod-motivator.mod-hidden .element-title {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+
+/*-----------------------------------------
+  Edition view
+*/
+
+.format-ludimoodle .cm-motivator-choices {
+    position: absolute;
+}
+
+.format-ludimoodle .course-content ul.sections li.section.main {
+    margin-top: 10px;
+}
+
+.format-ludimoodle #section-0 .mod-indent-outer {
+    margin-top: 15px;
+}
+
+.format-ludimoodle ul.sections li.section .left.side {
+    padding-left: 35px;
+    padding-top: 0;
+}
+
+.format-ludimoodle .cm-motivator-choices .motivator-icon {
+    position: absolute;
+    height: 30px;
+    left: -45px;
+}
+
+.format-ludimoodle .section-motivator-choices .motivator-icon {
+    position: absolute;
+    height: 45px;
+    left: 10px;
+}
+
+.motivator-chooser.ludic-popup {
+    display: none;
+}
+
+.motivator-chooser.ludic-popup .motivator-list {
+    width: 35%;
+}
+
+.ludic-popup .ludic-popup-content {
+    display: flex;
+}
+
+.motivator-chooser.ludic-popup .motivator-icon {
+    height: 45px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.motivator-chooser.ludic-popup .motivator-list .motivator-description {
+    display: none;
+}
+
+.motivator-chooser.ludic-popup .motivator-description-wrapper {
+    width: 64%;
+    vertical-align: top;
+    border-left: 1px solid #c3c3c3;
+    padding: 10px;
+    position: relative;
+}
+
+.motivator-chooser.ludic-popup .motivator-description-content {
+    position: absolute;
+    bottom: 0;
+    text-align: justify;
+}
+
+.motivator-chooser.ludic-popup .preset-container {
+    display: inline-block;
+    width: 50%;
+    padding: 5px;
+}
+
+.ludic-popup.motivator-chooser .preset-container:nth-child(even) {
+    padding-right: 5px;
+    padding-left: 0;
+}
+
+.ludic-popup.motivator-chooser select {
+    width: 100%;
+}
+
+.motivator-chooser.ludic-popup .motivator-label {
+    margin-bottom: 7px;
+    margin-top: 7px;
+}
+
+.motivator-chooser.ludic-popup input[type="radio"] {
+    vertical-align: middle;
+}
+
+.motivator-chooser.ludic-popup .ludic-popup-content {
+    padding: 14px;
+}
+
+.motivator-chooser.ludic-popup {
+    height: 622px;
+}
+
+.motivator-chooser.ludic-popup .ludic-popup-footer {
+    text-align: right;
+}
+
+.ludic-popup {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin: auto;
+    min-width: 600px;
+    border: none;
+    border-radius: 0;
+    outline: 0;
+    z-index: 4100;
+    width: 42%;
+
+}
+
+.ludic-popup-container {
+    box-sizing: border-box;
+    box-shadow: 1px 2px 5px 0 rgba(30, 36, 69, 0.2);
+    background: #FFF;
+    transform: translate(-50%, -50%);
+}
+
+.ludic-popup-content {
+    height: 530px;
+    overflow: auto;
+}
+
+.ludic-popup-footer {
+    padding: 10px 14px;
+    border-top: 1px solid #c3c3c3;
+}
+
+.ludic-popup-header {
+    height: 44px;
+    line-height: 44px;
+    font-size: 18px;
+    padding-left: 8px;
+    position: relative;
+    color: #FFF;
+    text-transform: uppercase;
+    background: #3a3a3a;
+}
+
+.ludic-popup-header .close-popup {
+    float: right;
+    margin-top: 9px;
+    margin-right: 6px;
+}
+
+/* Pour debug */
+.cm-motivator-choices  {
+    display: none;
+}
+
+/*-----------------------------------------
+  Report styles
+*/
+.ludi-report-buttons-container {
+    display: flex;
+    min-height: 348px;
+}
+.ludi-report-buttons {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+.ludi-report-buttons .buttons-group {
+    width: 33.33%;
+    display: inline-block;
+}
+.ludi-report-buttons .teacher-link {
+    text-align: center;
+}
+#page-course-format-ludimoodle-reports-quiz_report table.report-quiz tr.user-0 {
+    display: none;
+}
+
+#page-course-format-ludimoodle-reports-quiz_report .sections-tabs {
+    margin-top: 15px;
+}
+
+#page-course-format-ludimoodle-reports-quiz_report .section-container {
+    margin-top: 20px;
+}
+
+#page-course-format-ludimoodle-reports-quiz_report #course-header {
+    display: none;
+}
+
+
+
+/* Animation */
+/*-----------------------------------------
+  Animation
+*/
+
+#course-header.shake {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+#background-animation {
+    position: fixed;
+    z-index: 5000;
+    background: rgba(0, 0, 0, 0.21);
+    width: 100%;
+    height: 100%;
+}
+
+/* Mod view */
+.ludi-mod-view .ludi-left-part {
+    vertical-align: top;
+    border-right: #f8b334 5px dotted;
+    width: 50%;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-right: 20px;
+}
+
+.ludi-mod-view .ludi-right-part {
+    display: inline-block;
+    width: 50%;
+    padding-left: 1.25rem;
+    text-align: left;
+
+}
+
+.ludimoodle-overlay {
+    display: none;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #aaa;
+    opacity: .3;
+}
+/*--------------MOTIVATOR BACKGROUND---------------------------*/
+.ludi-bg {
+    background-repeat: no-repeat;
+    -webkit-background-size: 10%;
+    background-size: 10%;
+    background-position: 0 top;
+    border: none;
+}
+@media (max-width: 1024px) {
+    .ludi-bg {
+        -webkit-background-size: 20%;
+        background-size: 20%;
+    }
+}
+.ludi-bg.container-avatar {
+    background-image: url("[[pix:format_ludimoodle|background/icon_avatar]]");
+}
+.ludi-bg.container-badges {
+    background-image: url("[[pix:format_ludimoodle|background/icon_badges]]");
+}
+.ludi-bg.container-progression,
+.ludi-bg.container-relativeprogression {
+    background-image: url("[[pix:format_ludimoodle|background/icon_progress]]");
+}
+.ludi-bg.container-acceleration_indicator {
+    background-image: url("[[pix:format_ludimoodle|background/icon_timer]]");
+}
+.ludi-bg.container-score {
+    background-image: url("[[pix:format_ludimoodle|background/icon_score]]");
+}
+.ludi-main-container {
+    background-image: none !important;
+}
+
+@-webkit-keyframes shake {
+    0% {
+        -webkit-transform: translate(2px, 1px) rotate(0deg);
+    }
+    15% {
+        -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    30% {
+        -webkit-transform: translate(0, 2px) rotate(1deg);
+    }
+    45% {
+        -webkit-transform: translate(0, 2px) rotate(0deg);
+    }
+    60% {
+        -webkit-transform: translate(1px, -1px) rotate(1deg);
+    }
+    75% {
+        -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    90% {
+        -webkit-transform: translate(-1px, 1px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translate(2px, 1px) rotate(0deg);
+    }
+}
+
+
+/*// Small and Medium devices (576 and less)*/
+@media (max-width: 576px) {
+    .ludi-course-view.ludi-grid-view .grid-element {
+        margin-right: 0;
+        width: 100%;
+    }
+}
+
+/*// Small and Medium devices (720 and less)*/
+@media (min-width: 600px) and (max-width: 719px) {
+    .ludi-course-view.ludi-grid-view .grid-element {
+        width: calc(50% - 20px);
+        margin-top: 20px;
+        margin-right: 20px;
+        min-width: 260px;
+    }
+}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    .ludi-section-container .ludi-details-view .ludi-grid-view .grid-element {
+        width: 25%;
+    }
+}
+
+/*// Small and Medium devices (992px and less)*/
+@media (max-width: 1059px) {
+    .ludi-course-view.ludi-grid-view .grid-element:nth-child(even) {
+        margin-right: 0;
+    }
+}
+
+/*// Large devices (desktops, 1060px to 1200px)*/
+@media (min-width: 1060px) and (max-width: 1399px) {
+    .ludi-course-view.ludi-grid-view .grid-element:nth-child(3n) {
+        margin-right: 0;
+    }
+    .ludi-course-container .ludi-grid-view .grid-element {
+        width: calc(33.333333333% - 14px);
+    }
+}
+
+/*// Extra large devices (large desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+    .ludi-course-container .ludi-grid-view .grid-element {
+        width: calc(25% - 15px);
+    }
+    .ludi-course-view.ludi-grid-view .grid-element:nth-child(4n) {
+        margin-right: 0;
+    }
+}

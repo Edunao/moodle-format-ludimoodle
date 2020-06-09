@@ -1,0 +1,383 @@
+.ludi-progression.ludi-summary-section-view {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 10%;
+}
+.ludi-progression.ludi-summary-section-view .course-planet,
+.ludi-progression.ludi-summary-section-view .course-progression {
+    display: flex;
+    width: 50%;
+}
+.ludi-progression.ludi-summary-section-view .course-progression .advancement {
+    font-family: 'GothamRounded-Bold';
+    font-size: 48px;
+    font-weight: 900;
+    color: #f8b334;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+.ludi-progression.ludi-summary-section-view .course-progression .advancement .percentage {
+    margin-left: 5px;
+}
+
+.progression-steps-container,
+.progression-bar-container {
+    margin: auto;
+    width: 100%;
+    max-width: 400px;
+    max-height: 400px;
+}
+.progression-steps-container .progression-steps-background {
+    position: relative;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-position: center;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    background-size: cover;
+}
+.progression-bar-container .progression-bar-background {
+    background-size: 1600px 1600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 100%;
+    animation: bgrocket 0.5333s infinite step-end;
+}
+.progression-steps-container .progression-steps-component,
+.progression-bar-container .progression-bar-component {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    max-height: 100%;
+}
+.advancement-container {
+    width: 100%;
+    text-align: center;
+}
+.advancement-container .advancement {
+    width: 160px;
+    border-radius: 8px;
+    background-color: #f8b334;
+    font-family: 'GothamRounded-Bold';
+    font-size: 48px;
+    font-weight: 900;
+    color: #fff;
+    margin: auto;
+}
+.advancement-container .advancement .percentage {
+    margin-left: 5px;
+}
+
+.ludi-section-container .ludi-progression.ludi-grid-view img {
+    max-width: 80px;
+}
+
+.ludi-mod-container .ludi-progression.ludi-mod-view {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+}
+.ludi-progression.ludi-mod-view .ludi-right-part {
+    margin: auto;
+    display: flex;
+}
+
+.ludi-summary-mod-view .ludi-progression-image.icon {
+    margin: 6.5px 0;
+}
+
+/* progression step max animation */
+.progression-steps-container .progression-steps-component.progression-max {
+    width: 2000px;
+    height: 2400px;
+    max-width: unset;
+    max-height: unset;
+    left: -400%;
+    top: -500%;
+    z-index: -1;
+    display: none;
+}
+.progression-steps-container .progression-steps-component.progression-max.animate {
+    animation: progressionmax 1.5s step-end;
+    z-index: 1;
+    display: block;
+}
+.progression-steps-container .progression-steps-component.rocket.max {
+    display: none;
+}
+
+/* progression step max animation */
+.ludi-progression.progression-bar-container .progression-bar-component.rocket {
+    width: 1600px;
+    height: 1600px;
+    max-width: unset;
+    max-height: unset;
+    left: 10%;
+    top: 10%;
+    animation: percentrocket 0.5333s infinite step-end;
+}
+.ludi-progression.progression-bar-container .c100 {
+    display: none;
+}
+.ludi-progression.progression-bar-container .c100 span {
+    display: none;
+}
+.ludi-progression.progression-bar-container .c100 span.show {
+    display: block;
+}
+
+@keyframes percentrocket {
+    0% {
+        left: 10%;
+        top: 10%;
+    }
+    7.1% {
+        left: calc(10% - 100%);
+        top: 10%;
+    }
+    14.2% {
+        left: calc(10% - 200%);
+        top: 10%;
+    }
+    21.3% {
+        left: calc(10% - 300%);
+        top: 10%;
+    }
+    28.4% {
+        left: 10%;
+        top: calc(10% - 100%);
+    }
+    35.5% {
+        left: calc(10% - 100%);
+        top: calc(10% - 100%);
+    }
+    42.6% {
+        left: calc(10% - 200%);
+        top: calc(10% - 100%);
+    }
+    200% {
+        left: calc(10% - 300%);
+        top: calc(10% - 100%);
+    }
+    57.1% {
+        left: calc(10% - 100%);
+        top: calc(10% - 200%);
+    }
+    64.2% {
+        left: calc(10% - 200%);
+        top: calc(10% - 200%);
+    }
+    71.3% {
+        left: calc(10% - 300%);
+        top: calc(10% - 200%);
+    }
+    78.4% {
+        left: 10%;
+        top: calc(10% - 300%);
+    }
+    85.5% {
+        left: calc(10% - 100%);
+        top: calc(10% - 300%);
+    }
+    92.6% {
+        left: calc(10% - 200%);
+        top: calc(10% - 300%);
+    }
+    100% {
+        left: calc(10% - 300%);
+        top: calc(10% - 300%);
+    }
+}
+
+@keyframes bgrocket {
+    0% {
+        background-position-x: 0;
+        background-position-y: 0;
+    }
+    7.1% {
+        background-position-x: -400px;
+        background-position-y: 0;
+    }
+    14.2% {
+        background-position-x: -800px;
+        background-position-y: 0;
+    }
+    21.3% {
+        background-position-x: -1200px;
+        background-position-y: 0;
+    }
+    28.4% {
+        background-position-x: 0;
+        background-position-y: -400px;
+    }
+    35.5% {
+        background-position-x: -400px;
+        background-position-y: -400px;
+    }
+    42.6% {
+        background-position-x: -800px;
+        background-position-y: -400px;
+    }
+    50% {
+        background-position-x: -1200px;
+        background-position-y: -400px;
+    }
+    57.1% {
+        background-position-x: -400px;
+        background-position-y: -800px;
+    }
+    64.2% {
+        background-position-x: -800px;
+        background-position-y: -800px;
+    }
+    71.3% {
+        background-position-x: -1200px;
+        background-position-y: -800px;
+    }
+    78.4% {
+        background-position-x: 0;
+        background-position-y: -1200px;
+    }
+    85.5% {
+        background-position-x: -400px;
+        background-position-y: -1200px;
+    }
+    92.6% {
+        background-position-x: -800px;
+        background-position-y: -1200px;
+    }
+    100% {
+        background-position-x: -1200px;
+        background-position-y: -1200px;
+    }
+}
+
+@keyframes progressionmax {
+    0% {
+        left: 0;
+        top: 0;
+    }
+    3.33% {
+        left: -100%;
+        top: 0;
+    }
+    6.66% {
+        left: -200%;
+        top: 0;
+    }
+    10% {
+        left: -300%;
+        top: 0;
+    }
+    13.33% {
+        left: -400%;
+        top: 0;
+    }
+    16.66% {
+        left: 0;
+        top: -100%;
+    }
+    20% {
+        left: -100%;
+        top: -100%;
+    }
+    23.33% {
+        left: -200%;
+        top: -100%;
+    }
+    26.66% {
+        left: -300%;
+        top: -100%;
+    }
+    30% {
+        left: -400%;
+        top: -100%;
+    }
+    33.33% {
+        left: 0;
+        top: -200%;
+    }
+    36.66% {
+        left: -100%;
+        top: -200%;
+    }
+    40% {
+        left: -200%;
+        top: -200%;
+    }
+    43.33% {
+        left: -300%;
+        top: -200%;
+    }
+    46.66% {
+        left: -400%;
+        top: -200%;
+    }
+    50% {
+        left: 0;
+        top: -300%;
+    }
+    53.33% {
+        left: -100%;
+        top: -300%;
+    }
+    56.66% {
+        left: -200%;
+        top: -300%;
+    }
+    60% {
+        left: -300%;
+        top: -300%;
+    }
+    63.33% {
+        left: -400%;
+        top: -300%;
+    }
+    66.66% {
+        left: 0;
+        top: -400%;
+    }
+    70% {
+        left: -100%;
+        top: -400%;
+    }
+    73.33% {
+        left: -200%;
+        top: -400%;
+    }
+    76.66% {
+        left: -300%;
+        top: -400%;
+    }
+    80% {
+        left: -400%;
+        top: -400%;
+    }
+    84% {
+        left: 0;
+        top: -500%;
+    }
+    88% {
+        left: -100%;
+        top: -500%;
+    }
+    92% {
+        left: -200%;
+        top: -500%;
+    }
+    96% {
+        left: -300%;
+        top: -500%;
+    }
+    100% {
+        left: -400%;
+        top: -500%;
+    }
+}

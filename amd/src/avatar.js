@@ -1,0 +1,1 @@
+../../motivators/avatar/motivator.js

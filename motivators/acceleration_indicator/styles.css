@@ -1,0 +1,104 @@
+
+.ludi-mod-view.motivator-acceleration_indicator {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 348px;
+    width: 100%;
+}
+
+.ludi-mod-view.motivator-acceleration_indicator .progress-img-container {
+    width: 100%;
+    margin: auto;
+}
+
+.ludi-mod-view.motivator-acceleration_indicator .reftime-container {
+    border-left: #f8b334 5px dotted;
+}
+
+.ludi-mod-view.motivator-acceleration_indicator .chrono-container,
+.ludi-mod-view.motivator-acceleration_indicator .reftime-container {
+    display: flex;
+    text-align: center;
+    min-height: 205px;
+    width: 50%;
+}
+
+.ludi-mod-view.motivator-acceleration_indicator .chrono-container .chrono,
+.ludi-mod-view.motivator-acceleration_indicator .reftime-container .reftime {
+    display: inline-block;
+    margin: auto;
+}
+
+.chrono-container img {
+    width: 100%;
+    max-width: 60px;
+}
+
+.reftime-container *:first-child {
+    display: block;
+}
+
+.reftime-container img {
+    width: 100%;
+    max-width: 60px;
+}
+
+.reftime-container .reftime-value {
+    font-weight: bold;
+    color: #f8b334;
+    margin-left: 5px;
+    font-size: 1.3rem;
+    font-family: GothamRounded-Bold;
+}
+
+.current-time {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: GothamRounded-Bold;
+}
+
+.current-time.done {
+    color: #f0b40f;
+}
+
+.ludi-section-container .summary-element.ludi-acceleration_indicator {
+    width: 25%;
+}
+
+.ludi-section-container .summary-element.ludi-acceleration_indicator .bestrank {
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.ludi-section-container .summary-element.ludi-acceleration_indicator img,
+.ludi-section-container .summary-element.ludi-acceleration_indicator svg {
+    width: 200px;
+    height: auto;
+}
+
+.ludi-section-container .ludi-grid-view.ludi-acceleration_indicator {
+    width: 75%;
+    min-height: 348px;
+    display: flex;
+}
+
+.ludi-section-container .ludi-grid-view.ludi-acceleration_indicator a .element-content img {
+    max-height: 80px;
+    width: auto;
+    text-align: left;
+}
+
+.ludi-course-container .ludi-grid-view .grid-element.acceleration_indicator a .element-content {
+    display: flex;
+}
+
+.ludi-course-container .ludi-grid-view .grid-element.acceleration_indicator a .element-content img {
+    max-height: 120px;
+    height: 100%;
+    width: auto;
+    max-width: unset;
+}

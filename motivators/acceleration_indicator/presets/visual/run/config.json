@@ -1,0 +1,15 @@
+{
+  "todo-image": "todo.svg",
+  "reftime-image": "reftime.svg",
+  "chrono-image": "chrono.svg",
+  "progress-images": {
+    "0"  : "timer1.gif",
+    "10" : "timer2.gif",
+    "30" : "timer3.gif",
+    "40" : "timer4.gif",
+    "50" : "timer5.gif",
+    "70" : "timer6.gif",
+    "80" : "timer7.gif",
+    "100": "timer8.gif"
+  }
+}

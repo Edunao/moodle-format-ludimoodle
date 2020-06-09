@@ -1,0 +1,62 @@
+{
+    "course-planets": [
+        "course-planet-09.svg",
+        "course-planet-01.svg",
+        "course-planet-02.svg",
+        "course-planet-03.svg",
+        "course-planet-04.svg",
+        "course-planet-05.svg",
+        "course-planet-06.svg",
+        "course-planet-07.svg",
+        "course-planet-08.svg",
+        "course-planet-09.svg"
+    ],
+    "course-planets-max": [
+        "course-planet-max-09.svg",
+        "course-planet-max-01.svg",
+        "course-planet-max-02.svg",
+        "course-planet-max-03.svg",
+        "course-planet-max-04.svg",
+        "course-planet-max-05.svg",
+        "course-planet-max-06.svg",
+        "course-planet-max-07.svg",
+        "course-planet-max-08.svg",
+        "course-planet-max-09.svg"
+    ],
+    "section-planets": [
+        "section-planet-09.svg",
+        "section-planet-01.svg",
+        "section-planet-02.svg",
+        "section-planet-03.svg",
+        "section-planet-04.svg",
+        "section-planet-05.svg",
+        "section-planet-06.svg",
+        "section-planet-07.svg",
+        "section-planet-08.svg",
+        "section-planet-09.svg"
+    ],
+    "progression-steps" : {
+      "0"  : "progression-step-00.svg",
+      "10" : "progression-step-01.svg",
+      "20" : "progression-step-02.svg",
+      "30" : "progression-step-03.svg",
+      "40" : "progression-step-04.svg",
+      "50" : "progression-step-05.svg",
+      "60" : "progression-step-06.svg",
+      "70" : "progression-step-07.svg",
+      "80" : "progression-step-08.svg",
+      "90" : "progression-step-09.svg",
+      "100": "progression-step-10.svg"
+    },
+    "progression-steps-max" : "progression-step-max.svg",
+    "progression-background": "progression-background.svg",
+    "asteroids": [
+        "asteroid-01.svg",
+        "asteroid-02.svg",
+        "asteroid-03.svg"
+    ],
+    "mod-elements": {
+        "rocket-sprite" : "mod-rocket-sprite.svg"
+    },
+    "css-file": "styles.css"
+}

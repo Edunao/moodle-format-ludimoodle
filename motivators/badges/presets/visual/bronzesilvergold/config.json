@@ -1,0 +1,56 @@
+{
+  "str-en": {
+    "badges-bronzesilvergold-progression-title-1" : "",
+    "badges-bronzesilvergold-progression-title-2" : "Badges - Lesson 1",
+    "badges-bronzesilvergold-progression-title-3" : "Badges - Lesson 2",
+    "badges-bronzesilvergold-progression-title-4" : "Badges - Lesson 3",
+    "badges-bronzesilvergold-progression-title-5" : "Badges - Lesson 4",
+    "badges-bronzesilvergold-progression-title-6" : "Badges - Lesson 5",
+    "badges-bronzesilvergold-progression-title-7" : "Badges - Lesson 6",
+    "badges-bronzesilvergold-progression-title-8" : "Badges - Lesson 7",
+    "badges-bronzesilvergold-progression-title-9" : "Badges - Lesson 8",
+    "badges-bronzesilvergold-progression-title-10" : ""
+  },
+  "str-fr": {
+    "badges-bronzesilvergold-progression-title-1" : "",
+    "badges-bronzesilvergold-progression-title-2" : "Badges - Leçon 1",
+    "badges-bronzesilvergold-progression-title-3" : "Badges - Leçon 2",
+    "badges-bronzesilvergold-progression-title-4" : "Badges - Leçon 3",
+    "badges-bronzesilvergold-progression-title-5" : "Badges - Leçon 4",
+    "badges-bronzesilvergold-progression-title-6" : "Badges - Leçon 5",
+    "badges-bronzesilvergold-progression-title-7" : "Badges - Leçon 6",
+    "badges-bronzesilvergold-progression-title-8" : "Badges - Leçon 7",
+    "badges-bronzesilvergold-progression-title-9" : "Badges - Leçon 8",
+    "badges-bronzesilvergold-progression-title-10" : ""
+  },
+  "hardest-badge-image":"badge_gold.svg",
+  "middle-badge-image":"badge_silver.svg",
+  "easiest-badge-image":"badge_bronze.svg",
+  "failed-badge-image":"badge_failed.svg",
+  "locked-badge-image":"badge_locked.svg",
+  "unlocked-badge-image":"badge_unlocked.svg",
+  "progression-images-sets":[
+    "set_0.svg",
+    "set_1.svg",
+    "set_2.svg",
+    "set_3.svg"
+  ],
+  "progression-images-badges":[
+    "badge_0.svg",
+    "badge_1.svg",
+    "badge_2.svg",
+    "badge_3.svg"
+  ],
+  "currentrun-images-sets":[
+    "set_0.svg",
+    "set_1.svg",
+    "set_2.svg",
+    "set_3.svg"
+  ],
+  "currentrun-images-badges":[
+    "badge_0.svg",
+    "badge_1.svg",
+    "badge_2.svg",
+    "badge_3.svg"
+  ]
+}

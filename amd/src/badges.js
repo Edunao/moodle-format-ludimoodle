@@ -1,0 +1,1 @@
+../../motivators/badges/motivator.js

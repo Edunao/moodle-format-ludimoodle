@@ -1,0 +1,52 @@
+{
+  "todo-image": "todo.svg",
+  "summary-image": "summary.svg",
+  "mod-image" : "group-view.svg",
+  "summary-js-data": {
+    "no_attempt_layers": ["me", "bg"],
+    "victory_layers": ["me_win", "bg"],
+    "layers": ["me", "bg", "info_x2B_"],
+    "rank_container" : "#info_x2B__num .rank",
+    "rank_prefix_container": "#info_x2B__num .rank-prefix"
+  },
+  "mod-js-data": {
+    "victory_layers": ["bg", "me_win"],
+    "base_layers": ["bg", "me"],
+    "info_layers" : ["me_info"],
+    "rank_container" : "#AI-1_num_-_copie .rank",
+    "rank_prefix_container": "#AI-1_num_-_copie .rank-prefix",
+    "prev_2" : {
+      "layers": ["AI-2"],
+      "rank_container" : "#AI-2_num .rank",
+      "rank_prefix_container": "#AI-2_num .rank-prefix",
+      "alternative_layers": ["AI-2_bis"],
+      "alternative_rank_container" : "#AI-2_num_bis .rank",
+      "alternative_rank_prefix_container": "#AI-2_num_bis .rank-prefix"
+    },
+    "prev_1": {
+      "layers": ["AI-1"],
+      "rank_container" : "#AI-1_num .rank",
+      "rank_prefix_container": "#AI-1_num .rank-prefix",
+      "alternative_layers": ["AI-1_bis"],
+      "alternative_rank_container" : "#AI-1_num_bis .rank",
+      "alternative_rank_prefix_container": "#AI-1_num_bis .rank-prefix"
+    },
+    "next_1": {
+      "layers": ["AI_x2B_1"],
+      "rank_container" : "#AI_x2B_1_num .rank",
+      "rank_prefix_container": "#AI_x2B_1_num .rank-prefix",
+      "alternative_layers": ["AI_x2B_1_bis"],
+      "alternative_rank_container" : "#AI_x2B_1_num_bis .rank",
+      "alternative_rank_prefix_container": "#AI_x2B_1_num_bis .rank-prefix"
+    },
+    "next_2": {
+      "layers": ["AI_x2B_2"],
+      "rank_container" : "#AI_x2B_2_num .rank",
+      "rank_prefix_container": "#AI_x2B_2_num .rank-prefix",
+      "alternative_layers": ["AI_x2B_2_bis"],
+      "alternative_rank_container" : "#AI_x2B_2_num_bis .rank",
+      "alternative_rank_prefix_container": "#AI_x2B_2_num_bis .rank-prefix"
+    }
+  },
+  "css-file": "styles.css"
+}

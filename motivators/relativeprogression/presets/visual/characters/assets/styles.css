@@ -1,0 +1,36 @@
+.ludimoodle-container .relativeprogress-mod-img.svg {
+    width: auto;
+    height: auto;
+}
+.ludi-course-container .ludi-grid-view .grid-element.relativeprogression a .element-content svg {
+    max-height: 160px;
+    width: 100%;
+}
+
+.ludi-section-container .ludi-grid-view.ludi-relativeprogression {
+    display: flex;
+}
+.ludi-section-container .summary-element.ludi-relativeprogression {
+    width: 25%;
+}
+.ludi-section-container .summary-element.ludi-relativeprogression .ludi-section-view {
+    display: flex;
+}
+.ludi-section-container .summary-element.ludi-relativeprogression img,
+.ludi-section-container .summary-element.ludi-relativeprogression svg {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin: auto;
+}
+.ludi-section-container .ludi-grid-view.ludi-relativeprogression {
+    width: 75%;
+    min-height: 348px;
+}
+
+.ludi-section-container .ludi-grid-view.ludi-relativeprogression a .element-content img,
+.ludi-section-container .ludi-grid-view.ludi-relativeprogression a .element-content svg {
+    max-height: 110px;
+    width: auto;
+    text-align: left;
+}

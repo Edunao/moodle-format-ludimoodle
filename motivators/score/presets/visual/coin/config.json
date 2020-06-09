@@ -1,0 +1,12 @@
+{
+    "str-en": {
+        "pts" : "pts"
+    },
+    "str-fr": {
+        "pts" : "pts"
+    },
+    "base-background-image-perfect": "mod-perfect.svg",
+    "base-background-image": "mod.svg",
+    "summary-background-image": "section.svg",
+    "css-file": "styles.css"
+}

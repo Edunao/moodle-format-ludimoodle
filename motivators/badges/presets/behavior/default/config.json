@@ -1,0 +1,8 @@
+{
+  "progression-thresholds":[70, 85, 100],
+  "currentrun-thresholds":[
+    [4, 5, 6],
+    [4, 6, 7],
+    [7, 9, 10]
+  ]
+}
